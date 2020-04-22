@@ -4,13 +4,25 @@ import './App.css';
 import Main from './components/Main';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header';
+import Buttoncomp from './components/Button/Buttoncomp'
+
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme, flairTheme } from './components/Theme';
+import { GlobalStyles } from './components/Global';
 
 function App() {
+  console.log('darktheme: ', darkTheme)
+  console.log('flairTheme: ', flairTheme)
   return (
     <>
-    <Header />
-    <Main />
-    <Footer />
+    <ThemeProvider theme={lightTheme}>
+        <GlobalStyles />
+        <Header />
+        <Buttoncomp>Toggle Theme</Buttoncomp>
+            <h1>It's a light theme!</h1>
+        <Main />
+        <Footer />
+    </ThemeProvider>
     </>
   );
 }

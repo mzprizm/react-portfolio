@@ -5,7 +5,6 @@ export default function Footer() {
   return (
     <Flex
       alignItems="center"
-      background="blue"
       bottom={0}
       className="Footer-div"
       display="flex"

@@ -7,7 +7,7 @@ export default function Main() {
     <>
     <Flex>
       <body>hello this is Main.js</body>
-      <br />
+      <br />>
     </Flex>
     <Buttoncomp>Button here!</Buttoncomp>
     </>
